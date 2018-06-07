@@ -7,8 +7,26 @@ Hostname resolution will work if the Pi-Hole is used as DHCP server.
 
 ![alt text](https://i.imgur.com/v828Ak1.png)
 
-Requirements:
-```pip3 install requests ```
+Installation:
+
+```apt install python3 python3-pip
+pip3 install requests ```
+
+Upgrading From Pi-hole ~3.1 to FTLDNS:
+
+```cd /etc/.pihole
+sudo git fetch --all && sudo git checkout master
+cd /etc/pihole```
+sudo git fetch --all && sudo git checkout master
+echo "FTLDNS" | sudo tee /etc/pihole/ftlbranch
+pihole checkout core FTLDNS
+pihole checkout web FTLDNS
+
+echo "FTLDNS" | sudo tee /etc/pihole/ftlbranch
+pihole checkout core FTLDNS
+pihole checkout web FTLDNS```
+
+
 ```
 usage: main.py [-h] [-w WEBPASSWORD] [-i IP]
 
