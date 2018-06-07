@@ -9,7 +9,8 @@ Hostname resolution will work if the Pi-Hole is used as DHCP server.
 
 Installation:
 
-```apt install python3 python3-pip
+```
+apt install python3 python3-pip
 pip3 install requests
 
 If upgrading From Pi-hole ~3.1 to FTLDNS:
