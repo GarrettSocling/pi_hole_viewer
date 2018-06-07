@@ -19,9 +19,6 @@ cd /etc/.pihole
 sudo git fetch --all && sudo git checkout master
 cd /etc/pihole
 sudo git fetch --all && sudo git checkout master
-echo "FTLDNS" | sudo tee /etc/pihole/ftlbranch
-pihole checkout core FTLDNS
-pihole checkout web FTLDNS
 
 Finally:
 
